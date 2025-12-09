@@ -2,8 +2,9 @@
   "name": "NPME",
   "displayName": "npme",
   "description": "Administra las dependencias npm directamente dentro de VSCode",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "josegaldamezdev",
+  "icon": "resources/icon_npme.png",
   "engines": {
     "vscode": "^1.106.1"
   },
