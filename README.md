@@ -1,51 +1,113 @@
-# NPME README
+# NPME - NPM Package Manager Extension
 
-This is the README for your extension "NPME". After writing up a brief description, we recommend including the following sections.
+![Version](https://img.shields.io/badge/version-0.0.1-blue.svg)
+![VS Code](https://img.shields.io/badge/VS%20Code-1.106.1+-blue.svg)
 
-## Features
+**NPME** es una extensión de Visual Studio Code que te permite administrar las dependencias de npm directamente desde el editor, sin necesidad de usar la terminal manualmente.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## 📦 Características
 
-For example if there is an image subfolder under your extension project workspace:
+### Búsqueda de Paquetes NPM
+- **Búsqueda en tiempo real** desde el registro oficial de npm
+- **Vista previa de README** con formato completo
+- **Información detallada** de cada paquete (autor, versión, descripción)
+- **Instalación directa** como dependencia de producción o desarrollo
 
-\!\[feature X\]\(images/feature-x.png\)
+### Gestión de Dependencias Instaladas
+- **Vista de árbol organizada** en el panel lateral
+- Separación entre **Dependencies** y **DevDependencies**
+- **Vista de detalles** al hacer clic en cualquier paquete instalado
+- **Información completa** del paquete (descripción, autor, licencia, keywords, enlaces)
+- **Botón de desinstalación** con confirmación
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Instalación Inteligente
+- Ejecución en **terminal integrada** con salida en tiempo real
+- **Detección automática** de finalización del proceso
+- **Notificaciones** cuando la instalación/desinstalación termina
+- **Actualización automática** de la vista después de cambios
 
-## Requirements
+## 🚀 Uso
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Buscar e Instalar Paquetes
 
-## Extension Settings
+1. Abre el panel lateral de **NPME** (icono de paquete 📦)
+2. Haz clic en **"Buscar paquetes NPM"**
+3. Escribe el nombre del paquete que buscas
+4. Explora los resultados y haz clic en cualquier paquete para ver su README
+5. Presiona el botón **"Instalar"** y selecciona el tipo de dependencia
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### Ver Detalles de Paquetes Instalados
 
-For example:
+1. En el panel lateral de **NPME**, expande **"Dependencias instaladas"**
+2. Navega por **Dependencies** o **DevDependencies**
+3. Haz clic en cualquier paquete para ver:
+   - Información detallada
+   - README completo
+   - Enlaces a homepage y repositorio
+   - Botón para desinstalar
 
-This extension contributes the following settings:
+### Desinstalar Paquetes
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+1. Haz clic en el paquete que deseas desinstalar
+2. En el panel de detalles, presiona **"🗑️ Desinstalar paquete"**
+3. Confirma la acción
+4. El proceso se ejecuta en la terminal y la vista se actualiza automáticamente
 
-## Known Issues
+## ⚙️ Comandos
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- **NPME: Search and Install** - Abre el panel de búsqueda de paquetes
+- **Refresh** - Actualiza manualmente la lista de dependencias
 
-## Release Notes
+## 📋 Requisitos
 
-Users appreciate release notes as you update your extension.
+- Visual Studio Code v1.106.1 o superior
+- Node.js y npm instalados en tu sistema
+- Proyecto con `package.json` (para gestionar dependencias instaladas)
 
-### 1.0.0
+## 🎯 Características Técnicas
 
-Initial release of ...
+- ✅ Monitoreo automático de cambios en `package.json`
+- ✅ Renderizado de Markdown para README
+- ✅ Sintaxis highlighting para bloques de código
+- ✅ Indicadores visuales de carga
+- ✅ Manejo de errores robusto
+- ✅ Iconos personalizados para cada tipo de dependencia
 
-### 1.0.1
+## 🐛 Problemas Conocidos
 
-Fixed issue #.
+Ninguno reportado por el momento.
 
-### 1.1.0
+## 📝 Notas de Versión
 
-Added features X, Y, and Z.
+### 0.0.1 (Versión Inicial)
+
+#### ✨ Características
+- Búsqueda de paquetes npm con resultados en tiempo real
+- Instalación de paquetes como dependencias de producción o desarrollo
+- Vista de dependencias instaladas organizadas por tipo
+- Panel de detalles completo para cada paquete
+- Desinstalación de paquetes con confirmación
+- Detección automática de finalización de procesos npm
+- Renderizado completo de README con formato Markdown
+- Iconos personalizados en pestañas de paneles
+
+#### 🎨 Interfaz
+- Panel lateral dedicado en la Activity Bar
+- Vista de árbol con iconos distintivos
+- Loader animado mientras se cargan datos
+- Diseño adaptado al tema de VS Code
+
+## 🤝 Contribuir
+
+¿Encontraste un bug o tienes una idea para mejorar NPME? ¡Abre un issue o envía un pull request!
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT.
+
+---
+
+**¡Disfruta gestionando tus dependencias npm sin salir de VS Code!** 🚀
 
 ---
 

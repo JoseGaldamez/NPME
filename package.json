@@ -2,7 +2,8 @@
   "name": "NPME",
   "displayName": "npme",
   "description": "Administra las dependencias npm directamente dentro de VSCode",
-  "version": "0.0.1",
+  "version": "1.0.1",
+  "publisher": "josegaldamezdev",
   "engines": {
     "vscode": "^1.106.1"
   },
@@ -87,5 +88,9 @@
   },
   "dependencies": {
     "node-fetch": "^2.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoseGaldamez/NPME.git"
   }
 }
