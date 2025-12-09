@@ -53,6 +53,9 @@ export class SearchPanel {
             }
         );
 
+        // Agregar icono al panel
+        panel.iconPath = vscode.Uri.joinPath(extensionUri, 'resources', 'package-icon.svg');
+
         // Crear una instancia temporal para manejar este panel
         const detailsPanel = new SearchPanel(panel, extensionUri);
         
@@ -80,6 +83,9 @@ export class SearchPanel {
                 localResourceRoots: [extensionUri]
             }
         );
+
+        // Agregar icono al panel
+        panel.iconPath = vscode.Uri.joinPath(extensionUri, 'resources', 'package-icon.svg');
 
         SearchPanel.currentPanel = new SearchPanel(panel, extensionUri);
     }
