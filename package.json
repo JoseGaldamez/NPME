@@ -2,11 +2,11 @@
   "name": "NPME",
   "displayName": "npme",
   "description": "Administra las dependencias npm directamente dentro de VSCode",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "josegaldamezdev",
   "icon": "resources/icon_npme.png",
   "engines": {
-    "vscode": "^1.106.1"
+    "vscode": "^1.95.0"
   },
   "categories": [
     "Other"
@@ -75,7 +75,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.106.1",
+    "@types/vscode": "^1.95.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "22.x",
     "@types/node-fetch": "^2.6.11",
